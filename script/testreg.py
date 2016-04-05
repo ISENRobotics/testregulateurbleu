@@ -5,6 +5,7 @@ from std_msgs.msg import String
 from regulateur.msg  import reg
 
 def talker():
+    #Route D->C, robot en E 
     phiNulaGauche = reg()
     phiNulaGauche.pos0=389444
     phiNulaGauche.pos1=5362681
@@ -15,6 +16,7 @@ def talker():
     phiNulaGauche.objb1=5362723
     phiNulaGauche.deltaMax=0.4
 
+    #Route D->C, robot en F 
     phiNulaDroite = reg()
     phiNulaDroite.pos0=389464
     phiNulaDroite.pos1=5362685
@@ -25,6 +27,7 @@ def talker():
     phiNulaDroite.objb1=5362723
     phiNulaDroite.deltaMax=0.4
 
+    #Route C->B, robot en G 
     phiPi_2aDroite = reg()
     phiPi_2aDroite.pos0=389367
     phiPi_2aDroite.pos1=5362744
@@ -35,6 +38,7 @@ def talker():
     phiPi_2aDroite.objb1=5362723
     phiPi_2aDroite.deltaMax=0.4
 
+    #Route C->B, robot en H 
     phiPi_2aGauche = reg()
     phiPi_2aGauche.pos0=389364
     phiPi_2aGauche.pos1=5362716
@@ -45,6 +49,7 @@ def talker():
     phiPi_2aGauche.objb1=5362723
     phiPi_2aGauche.deltaMax=0.4
 
+    #Route B->A, robot en I 
     phiMoinsPiaDroite = reg()
     phiMoinsPiaDroite.pos0=389272
     phiMoinsPiaDroite.pos1=5362688
@@ -55,6 +60,7 @@ def talker():
     phiMoinsPiaDroite.objb1=5362629
     phiMoinsPiaDroite.deltaMax=0.4
 
+    #Route B->A, robot en J 
     phiMoinsPiaGauche = reg()
     phiMoinsPiaGauche.pos0=389292
     phiMoinsPiaGauche.pos1=5362693
@@ -65,6 +71,7 @@ def talker():
     phiMoinsPiaGauche.objb1=5362629
     phiMoinsPiaGauche.deltaMax=0.4
 
+    #Route A->D, robot en K 
     phiMoinsPi_2aDroite = reg()
     phiMoinsPi_2aDroite.pos0=389390
     phiMoinsPi_2aDroite.pos1=5362617
@@ -75,6 +82,7 @@ def talker():
     phiMoinsPi_2aDroite.objb1=5362629
     phiMoinsPi_2aDroite.deltaMax=0.4
 
+    #Route A->D, robot en L 
     phiMoinsPi_2aGauche = reg()
     phiMoinsPi_2aGauche.pos0=389387
     phiMoinsPi_2aGauche.pos1=5362643
